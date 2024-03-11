@@ -1,0 +1,134 @@
+/* Ishem Amido */
+/* Bs INFO 2A */
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    background-color: #a0a9b2; /* Custom body background color */
+}
+
+header {
+    padding: 20px;
+}
+
+header h3 {
+    margin: 0;
+    font-size: 1.5em; /* Larger header size */
+}
+
+header img {
+    width: 100px;
+    height: auto;
+}
+    
+main {
+    padding: 20px;
+}
+
+#schedule {
+    margin: 20px auto; /* Center the table */
+    max-width: 800px;
+  
+  
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+    width: 100%;
+    table-layout: fixed; /* Ensure the table layout doesn't change */
+}
+
+
+th, td {
+   
+    padding: 10px;
+    border: 1px solid black;
+    text-align: center; /* Horizontal alignment */
+    vertical-align: middle; /* Vertical alignment */
+    background-color: #a0a9b2; /* Default cell background color */
+    font-size: 14px; /* Fixed font size */
+}
+
+th:first-child,
+td:first-child {
+    width: 10%; /* First column width */
+}
+
+th:not(:first-child),
+td:not(:first-child) {
+    width: 15%; /* Remaining columns width */
+}
+
+th {
+    background-color: black; /* Custom table header background color */
+    color: white; /* Custom table header text color */
+    font-weight: bold;
+    font-style: italic;
+}
+
+td.one { background-color: #121d44; }
+td.two { background-color: #292865;}
+td.three { background-color: #2719a8; }
+td.four { background-color:  #4942E4; }
+td.five { background-color: #535C91;}
+td.six { background-color: #3C0753; }
+td.seven { background-color: #720455; }
+td.eight { background-color: #910A67; }
+td.nine { background-color: #CD6688; }
+td.ten { background-color:#EAB2A0; }
+td.eleven { background-color: #E6B9DE; }
+
+td.net { background-color: #F2D8D8; 
+color:#5C8984;}
+td.web { background-color: #545B77; 
+color:#374259;}
+td.prog { background-color: #9EC8B9;
+color:#092635; }
+td.mul { background-color: #5C8374;
+color:#1B4242; }
+td.ethics { background-color: #98ABEE;
+color:#201658; }
+td.data { background-color: #64CCC5; 
+color:#04364A;}
+td.PE { background-color: #373bb0; 
+color: #240A34;}
+
+@media print {
+    img {
+        filter: grayscale(100%);
+    }
+    body {
+        font-family: "Times New Roman", Times, serif; /* Font usage in print mode */
+        background-color: white; /* White background for printing */
+        color: black; /* Black text color for printing */
+    }
+
+    table {
+        background-color: white; /* White background for printing */
+    }
+
+    th, td {
+        background-color: white; /* White background for table cells */
+        color: black !important; /* Black text color for printing */
+        border-color: black ; /* Black border color for printing */
+    }
+}
+@media only screen and (max-width: 600px) {
+    /* Adjust styles for smaller screens (e.g., cellphones) */
+    /* You can modify the layout, font sizes, etc., to improve readability on smaller screens */
+    header img {
+        width: 85px; /* Adjust image size for smaller screens */
+    }
+    h3 {
+        font-size: 1.2em; /* Adjust header font size for smaller screens */
+    }
+    table {
+        font-size: 12px; /* Adjust table font size for smaller screens */
+    }
+    /* Add more responsive styles as needed */
+}
+
+
